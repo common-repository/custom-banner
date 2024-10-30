@@ -1,0 +1,96 @@
+#banner-main {
+	padding: 0 10px;
+	text-align: center;
+}
+
+#banner-main .banner-message {
+	font-size: 1rem;
+	text-decoration: none;
+	padding: 10px 24px;
+	display: inline-flex;
+	color: inherit;
+	line-height: 1.2;
+	min-height: 24px;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#banner-main .banner-message a {
+	display: block;
+	font-size: .8rem;
+	text-decoration: underline;
+	color: inherit;
+}
+
+#banner-main .banner-message img.emoji {
+	height: 1em;
+	vertical-align: middle;
+	margin: 0 6px;
+}
+
+#banner-main .banner-message.html {
+	display: inline;
+	line-height: 24px;
+}
+
+#banner-main .banner-message.html a {
+	font-size: 1rem;
+	display: inline;
+}
+
+#banner-main .bannerSwiper {
+	position: relative;
+	max-width: 650px;
+	overflow: hidden;
+}
+
+#banner-main .bannerSwiper.wide {
+	max-width: unset;
+}
+
+#banner-main .bannerSwiper.narrow {
+	max-width: 450px;
+}
+
+#banner-main .swiper-slide {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	justify-content: center;
+	height: auto;
+}
+
+#banner-main .banner-overlay {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 9;
+	pointer-events: none;
+}
+
+#banner-main .banner-prev,
+#banner-main .banner-next {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 10;
+	opacity: 1;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	padding: 0 6px;
+}
+
+#banner-main .banner-prev svg{
+	transform: rotate(180deg);
+	transform-origin: center;
+}
+
+#banner-main .banner-prev:hover,
+#banner-main .banner-next:hover {
+	opacity: 0.6;
+}
+
